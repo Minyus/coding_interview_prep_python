@@ -1,9 +1,5 @@
-import math
-
-
 def flip(arr, k):
-    pivot = math.floor(k / 2)
-    for i in range(0, int(pivot) + 1):
+    for i in range(0, k // 2 + 1):
         arr[i], arr[k - i] = arr[k - i], arr[i]
 
 
